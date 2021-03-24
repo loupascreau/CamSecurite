@@ -14,7 +14,7 @@ body
 {
     margin: 0;
     font-family: 'agencyr';
-    background-color: #efee3e;
+    background-color: #0882b3;
 }
 
 /*logo*/
@@ -25,29 +25,43 @@ body
     left: 0;
     background-color: #121212;
     width: 50%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
 }
 
-.left img 
+.left .logo
+{
+    max-width: 70%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.left img
 {
     margin: auto;
-    max-width: 70%;
-    height: auto;
+}
+
+.left .photos img
+{
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0882b3;
+}
+
+.left .photos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*coté droit - contenu*/
 
 .right
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: absolute;
     right: 0;
-    background-color: #efee3e;
+    background-color: #0882b3;
     width: 50%;
-    height: 100%;
 }
 
 /*menu de navigation*/
@@ -80,6 +94,10 @@ body
 .right .installations a
 {
     color: #ce1717;
+    background-color: #121212;
+    text-shadow: 0 0 1px #757575;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 .right nav a:hover
@@ -88,12 +106,6 @@ body
 }
 
 /*text écrit*/
-
-.right .content
-{
-    width: 80%;
-    margin: 0 10%;
-}
 
 .right h1
 {
@@ -105,12 +117,73 @@ body
     font-size: 1.5em;
 }
 
+.right .content
+{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 15%;
+}
+
+.right img
+{
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #121212;
+}
+
+figure
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+figcaption
+{
+    color: #0882b3;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 40px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.right figcaption
+{
+    color: #121212;
+}
+
+.right .call
+{
+    bottom: 0;
+}
+
+.right .content p
+{
+    text-align: center;
+}
+
+.right .content p a
+{
+    text-decoration: none;
+    color: #ce1717;
+    text-shadow: 1px 1px 1px #ce1717;
+    background-color: #121212;
+    border-radius: 3px;
+    padding: 5px;
+}
+
 /*bas de page*/
 
 .right .bottom
 {
     position: absolute;
-    bottom: 3%;
+    bottom: 0;
     right: 5%;
 }
 
@@ -141,17 +214,27 @@ body
     .left img 
     {
         width: 50%;
-        margin: 20px;
+        margin: auto;
     }
 
     .right
     {
         width: 100%;
     }
+
+    .right img
+    {
+        width: 50%;
+    }
     
     .installations
     {
         display: none;
+    }
+
+    figcaption
+    {
+        font-size: 1em;
     }
 }
 

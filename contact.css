@@ -14,7 +14,7 @@ body
 {
     margin: 0;
     font-family: 'agencyr';
-    background-color: #efee3e;
+    background-color: #0882b3;
 }
 
 /*logo*/
@@ -51,7 +51,6 @@ body
 {
     width: auto;
     height: 40%;
-    margin: auto;
 }
 
 .left p
@@ -63,12 +62,12 @@ body
 .left a
 {
     text-decoration: none;
-    color: #efee3e;
+    color: #ce1717;
 }
 
 .left .content img
 {
-    width: 10%;
+    width: 8%;
     height: auto;
     vertical-align: middle;
 }
@@ -82,7 +81,7 @@ body
     justify-content: space-around;
     position: absolute;
     right: 0;
-    background-color: #efee3e;
+    background-color: #0882b3;
     width: 50%;
     height: 100%;
 }
@@ -117,6 +116,10 @@ body
 .right .contacts a
 {
     color: #ce1717;
+    background-color: #121212;
+    text-shadow: 0 0 1px #757575;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 .right nav a:hover

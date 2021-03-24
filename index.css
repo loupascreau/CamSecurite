@@ -14,7 +14,6 @@ body
 {
     margin: 0;
     font-family: 'agencyr';
-    background-color: #efee3e;
 }
 
 /*logo*/
@@ -45,7 +44,7 @@ body
     justify-content: center;
     position: absolute;
     right: 0;
-    background-color: #efee3e;
+    background-color: #0882b3;
     width: 50%;
     height: 100%;
 }
@@ -80,6 +79,9 @@ body
 .right .accueil a
 {
     color: #ce1717;
+    background-color: #121212;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 .right nav a:hover
@@ -103,6 +105,17 @@ body
 .right p
 {
     font-size: 1.5em;
+}
+
+.right p a
+{
+    text-decoration: none;
+    background-color: #121212;
+    color: #ce1717;
+    text-shadow: 0.5px 0.5px 0.5px #ce1717;
+    font-size: 1.2em;
+    border-radius: 3px;
+    padding: 5px;
 }
 
 /*bas de page*/
